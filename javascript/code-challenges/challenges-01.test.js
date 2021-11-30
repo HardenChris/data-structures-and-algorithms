@@ -10,10 +10,6 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   const localArray = [];
-  // arr.forEach(number => {
-  //   let increasedNumber = number + 1;
-  //   localArray.push(increasedNumber);
-  // });
   arr.forEach(number => localArray.push(number + 1));
   return localArray;
 };
@@ -28,10 +24,6 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 
 const addExclamation = (arr) => {
   const localArray = [];
-  // arr.forEach(string => {
-  //   let fixedString = string + '!';
-  //   localArray.push(fixedString);
-  // });
   arr.forEach(string => localArray.push(string + '!'));
   return localArray;
 };
@@ -46,10 +38,6 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   const localArray = [];
-  // arr.forEach(string => {
-  //   let capString = (string.toUpperCase());
-  //   localArray.push(capString);
-  // });
   arr.forEach(string => localArray.push(string.toUpperCase()));
   return localArray;
 };
@@ -59,14 +47,13 @@ CHALLENGE 4
 
 Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function.
+Then, write a function named `speaker` that takes in an array of strings and a callback function. 
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
   let capWord = (word.toUpperCase() + '!');
-  console.log(capWord);
   return capWord;
 };
 
@@ -107,7 +94,7 @@ const addNumbers = (num, arr, times, callback) => {
 
 CHALLENGE 6
 
-Write a function named createList that takes in an array of the current store inventory.
+Write a function named createList that takes in an array of the current store intentory.
 
 The inventory is formatted like this:
 [
@@ -127,12 +114,8 @@ const createList = (availableItems) => {
     if (element.available === true) {
       localArray.push(element.name);
     }});
-  console.log(localArray);
   return localArray;
 };
-
-
-
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
