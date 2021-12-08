@@ -1,7 +1,5 @@
 'use strict';
 
-const { val } = require("cheerio/lib/api/attributes");
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -43,10 +41,6 @@ Write a function named addPurchases that, given an array of objects as input, us
 const addPurchases = (arr) => 
   arr.reduce((acc, val) => { acc = acc + val.purchasePrice;
     return acc; }, 0);
-<<<<<<< HEAD
-
-=======
->>>>>>> value-vs-reference
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -56,18 +50,11 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-<<<<<<< HEAD
-function countNumberOfElements(arr) {
-  arr.reduce((acc, val) => { acc = acc + val;
-    return acc + 1; }, 0);
-}
-=======
 const countNumberOfElements = (arr) => {
   return arr.reduce((acc, val) => {
     return acc + 1;
   }, 0);
 };
->>>>>>> value-vs-reference
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -324,7 +311,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the length of the array', () => {
     expect(countNumberOfElements([1, 2, 3, 4, 5])).toStrictEqual(5);
   });
@@ -337,7 +324,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
