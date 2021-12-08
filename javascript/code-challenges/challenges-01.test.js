@@ -10,10 +10,6 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   const localArray = [];
-  // arr.forEach(number => {
-  //   let increasedNumber = number + 1;
-  //   localArray.push(increasedNumber);
-  // });
   arr.forEach(number => localArray.push(number + 1));
   return localArray;
 };
@@ -28,10 +24,6 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 
 const addExclamation = (arr) => {
   const localArray = [];
-  // arr.forEach(string => {
-  //   let fixedString = string + '!';
-  //   localArray.push(fixedString);
-  // });
   arr.forEach(string => localArray.push(string + '!'));
   return localArray;
 };
@@ -46,10 +38,6 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   const localArray = [];
-  // arr.forEach(string => {
-  //   let capString = (string.toUpperCase());
-  //   localArray.push(capString);
-  // });
   arr.forEach(string => localArray.push(string.toUpperCase()));
   return localArray;
 };
