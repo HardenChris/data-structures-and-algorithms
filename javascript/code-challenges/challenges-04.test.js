@@ -24,6 +24,8 @@ function lower(str) {
 const updateAnimal = (arr, callback) => {
   const localArray = arr.map(str => callback(str));
   return localArray;
+  // Solution code here...
+  arr.forEach
 };
 
 /* ------------------------------------------------------------------------------------------------
