@@ -7,7 +7,15 @@ Write a function called addTwo that takes in an array and adds two to every valu
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
+<<<<<<< HEAD
   arr.forEach
+=======
+  const localArray = [];
+  for (let value of arr) {
+    localArray.push(value = value + 2);
+  }
+  return localArray;
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -19,7 +27,13 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
+<<<<<<< HEAD
   // Solution code here....
+=======
+const result = arr.filter(Number);
+console.log(result);
+return result;
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,7 +45,13 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const result = arr.filter(string => string.includes('and'));
+  console.log(result);
+  return result;
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +63,13 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const result = arr.filter(number => number % 2);
+  console.log(result);
+  return result;
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +81,13 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const result = arr.filter(number => !forbiddenValues.includes(number));
+  console.log(result);
+  return result;
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -246,7 +278,11 @@ describe('Testing challenge 5', () => {
   });
 });
 
+<<<<<<< HEAD
 xdescribe('Testing challenge 6', () => {
+=======
+describe('Testing challenge 6', () => {
+>>>>>>> value-vs-reference
   test('It should return an array containing the stats that are greater than the input', () => {
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([ { stat: { url: 'https://pokeapi.co/api/v2/stat/5/', name: 'special-defense' }, effort: 2, baseStat: 110 } ]);
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75).length).toStrictEqual(1);

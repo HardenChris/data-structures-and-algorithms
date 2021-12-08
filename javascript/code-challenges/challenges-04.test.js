@@ -22,7 +22,11 @@ function lower(str) {
 }
 
 const updateAnimal = (arr, callback) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  arr.forEach
+>>>>>>> value-vs-reference
 };
 
 /* ------------------------------------------------------------------------------------------------
