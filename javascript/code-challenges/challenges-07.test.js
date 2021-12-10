@@ -130,7 +130,7 @@ const listFoods = (recipe) => {
   recipe.ingredients.forEach( ingredientTemp => result.push(snip(snip(ingredientTemp))));
   return result;
 };
-
+.
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
