@@ -26,7 +26,7 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   return starWarsArr.sort((a,b) => b.height - a.height);
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -130,7 +130,7 @@ const listFoods = (recipe) => {
   recipe.ingredients.forEach( ingredientTemp => result.push(snip(snip(ingredientTemp))));
   return result;
 };
-.
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
